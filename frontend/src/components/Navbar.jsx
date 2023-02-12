@@ -38,7 +38,7 @@ export default function Navbar() {
     return (url.match(/\.(jpeg|jpg|gif|png)$/) != null);
   }
 
-  let userImage = checkURL(user?.urlImage)
+  let userImage = user && checkURL(user?.urlImage)
 
 
   if (user) {
